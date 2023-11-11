@@ -5,12 +5,14 @@ import SignIn from './Pages/SignIn';
 import ForgotPassword from './Pages/ForgotPassword';
 import SingUp from './Pages/SingUp';
 import Offers from './Pages/Offers';
+import Header from './componets/Header';
 
 
 function App() {
   return (
     <>
       <Router>
+        <Header/>
         <Routes>
 
 
@@ -21,7 +23,7 @@ function App() {
           <Route path='/offers' element={<Offers/>} />
           <Route path='/forgot-password' element={<ForgotPassword/>} />  
 
-          
+
         </Routes>
       </Router>
 
