@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation , useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 const Header = () => {
 
 
@@ -7,10 +7,10 @@ const Header = () => {
     const navigate = useNavigate();
 
     function pathMathRoute(route) {
-        if(route === location.pathname){
+        if (route === location.pathname) {
             return true;
         }
-        
+
 
     }
 
@@ -18,7 +18,7 @@ const Header = () => {
         <div className='bg-white border-b shadow-sm sticky top-0 z-50 ' >
             <header className='flex justify-between items-center px-3  max-w-6xl mx-auto '>
                 <div className="logo-div">
-                    <img src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg" alt="realtor app logo" className='h-5 cursor-pointer  ' onClick={() => navigate("/") } />
+                    <img src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg" alt="realtor app logo" className='h-5 cursor-pointer  ' onClick={() => navigate("/")} />
                 </div>
                 <div className="menu-div flex">
                     <ul className='flex space-x-10' >
